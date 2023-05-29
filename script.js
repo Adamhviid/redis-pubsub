@@ -21,7 +21,7 @@ publishButton.addEventListener("click", async () => {
   const message = messageInput.value;
 
   try {
-    const publishResponse = await fetch('http://localhost:3000/publish', {
+    await fetch('http://localhost:3000/publish', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

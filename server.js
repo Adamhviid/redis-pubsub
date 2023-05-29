@@ -17,9 +17,6 @@ app.post('/publish', async (req, res) => {
     if (err) {
       console.error('Error publishing message:', err);
       res.status(500).json({ error: 'Failed to publish message' });
-    } else {
-      console.log(`Published: ${message}`);
-      res.status(200).json({ message: message });
     }
   });
 });
